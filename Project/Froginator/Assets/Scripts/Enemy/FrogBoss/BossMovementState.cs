@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class BossMovementState : MonoBehaviour
 {
     [Header("Movement")]
-    private Transform goal;
+    private Transform player;
     private NavMeshAgent agent;
     public float JumpCD;
     public float maxJumpCD = 10;
@@ -52,8 +52,8 @@ public class BossMovementState : MonoBehaviour
 
     private void Awake(){
 
-        goal = GameObject.FindGameObjectWithTag("Player").transform;
-        Debug.Log("moving towards" ,goal);
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        Debug.Log("moving towards" ,player);
         agent = GetComponent<NavMeshAgent>();
 
         timer = knockbackTime;
@@ -114,7 +114,7 @@ public class BossMovementState : MonoBehaviour
             {
                 gameObject.GetComponent<Rigidbody>().isKinematic = true;
                 gameObject.GetComponent<NavMeshAgent>().isStopped = false;
-                agent.SetDestination(goal.position);
+                agent.SetDestination(player.position);
             }
         }
     }
@@ -142,7 +142,7 @@ public class BossMovementState : MonoBehaviour
 
     private void MovePlayer()
     {
-        agent.SetDirection(player.Position);
+        agent.SetDestination(player.position);
     }
 
     private void SpeedControl()

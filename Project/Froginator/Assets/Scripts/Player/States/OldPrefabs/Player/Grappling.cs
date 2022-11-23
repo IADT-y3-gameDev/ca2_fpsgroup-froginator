@@ -6,6 +6,7 @@ public class Grappling : MonoBehaviour
 {
     [Header("References")]
     private PlayerMovementState pms;
+    public GameObject GrapplingGun;
     public Transform cam;
     public Transform gunTip;
     public LayerMask whatIsGrappleable;
@@ -35,12 +36,23 @@ public class Grappling : MonoBehaviour
     private void Start()
     {
         pms = GetComponent<PlayerMovementState>();
+        GrapplingGun.SetActive(false);
     }
 
     private void Update()
     {
         // input
-        if (Input.GetKeyDown(grappleKey)) StartGrapple();
+        if (Input.GetKeyDown(grappleKey)){ 
+            StartGrapple();
+        }
+        
+        if(Input.GetMouseButton(1))
+        {
+            GrapplingGun.SetActive(true);
+        }else
+        {
+            GrapplingGun.SetActive(false);
+        }
 
         if (grapplingCdTimer > 0)
             grapplingCdTimer -= Time.deltaTime;

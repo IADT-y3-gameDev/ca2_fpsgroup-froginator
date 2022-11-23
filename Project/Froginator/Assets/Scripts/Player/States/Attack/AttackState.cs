@@ -4,81 +4,84 @@ using UnityEngine.UI;
 
 public class AttackState : MonoBehaviour
 {
-    public int ammoAmount = 10;
-    public float meleeRepeatDelay = 0.25f;
-    public GameObject projectile;
-    public GameObject punchMesh;
-    public GameObject gunMesh;
-    public Text ammoPanel;
-    private bool punchActive;
+
+    [Header("References")]
+    public int weaponIndex = 0;
+    public GameObject Pistol;
+    public GameObject Sniper;
+    public GameObject SMG;
+
+
+    
 
     private void Start()
     {
-        //Update text to display the player ammo.
-        UpdateText();
+       
         //Hide the hand when we start the game and have ammo.
-        punchMesh.SetActive(false);
+        SelectWeapon();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            if (ammoAmount > 0)
-            {
-                
-                // StartCoroutine(GunAttack());
-                ammoAmount--;
-                UpdateText();
-                var clone = Instantiate(projectile, gameObject.transform.position, gameObject.transform.rotation);
-                //Destroy after 2 seconds to stop clutter.
-                Destroy(clone, 5.0f);
+        int prevWeaponIndex = weaponIndex;
+
+       
+        if(Input.GetAxis("Mouse ScrollWheel") > 0f){
+
+            if(weaponIndex >= transform.childCount - 1){
+                weaponIndex = 0;
+            }else{
+
+                weaponIndex++;
+
             }
-            else
-            {
+
+        }
+        if(Input.GetAxis("Mouse ScrollWheel") < 0f){
+
+            if(weaponIndex <= 0){
                 
-                if (!punchActive)
-                {
-                    punchActive = true;
-                    StartCoroutine(MeleeAttack());
-                }
+                weaponIndex = transform.childCount - 1;
+
+            }else{
+
+                weaponIndex--;
+
             }
+
         }
-    }
 
-    void ApplyAmmo(int ammo)
-    {
-        ammoAmount += ammo;
-        UpdateText();
-    }
+        if(prevWeaponIndex != weaponIndex){
 
-    void UpdateText()
-    {
-        //Check the ammo panel exists.
-        if (ammoPanel != null)
-        {
-            //Sets the text on our panel.
-            ammoPanel.text = ammoAmount.ToString();
+            SelectWeapon();
+
         }
+       
     }
 
-    IEnumerator MeleeAttack()
-    {
-        punchMesh.SetActive(true);
-        // gunMesh.SetActive(false);
-        yield return new WaitForSeconds(0.1f);
-        punchMesh.SetActive(false);
-        yield return new WaitForSeconds(meleeRepeatDelay);
-        punchActive = false;
-        yield return null;
-    }
-
-    // IEnumerator GunAttack()
-    // {
-    //     gunMesh.SetActive(true);
-    //     yield return null;
-        
-    // }
     
+    private void SelectWeapon(){
+
+        int i = 0;
+        foreach (Transform weapon in transform){
+
+            if(i == weaponIndex){
+
+                weapon.gameObject.SetActive(true);
+
+            }else{
+
+                weapon.gameObject.SetActive(false);
+
+            }
+
+            i++;
+
+        }
+
+    }
+
+
+
 }

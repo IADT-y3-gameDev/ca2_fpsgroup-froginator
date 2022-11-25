@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,17 +9,16 @@ public class BossMovementState : MonoBehaviour
     [Header("Movement")]
     private Transform player;
     private NavMeshAgent agent;
-    public float JumpCD;
-    public float maxJumpCD = 10;
 
     public float moveSpeed;
 
     public float groundDrag;
 
     public float jumpForce;
-    public float jumpCooldown;
+    public float JumpCD;
+    public float maxJumpCD = 10;
     public float airMultiplier;
-     bool readyToJump;
+    public bool readyToJump;
 
 
 
@@ -39,7 +39,7 @@ public class BossMovementState : MonoBehaviour
     [Header("Ground Check")]
     public float bossHeight;
     public LayerMask GroundDetection;
-     bool grounded;
+    public bool grounded;
 
     public Transform orientation;
 
@@ -52,9 +52,9 @@ public class BossMovementState : MonoBehaviour
 
     private void Awake(){
 
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        Debug.Log("moving towards" ,player);
-        agent = GetComponent<NavMeshAgent>();
+        // player = GameObject.FindGameObjectWithTag("Player").transform;
+        // Debug.Log("moving towards" ,player);
+        // agent = GetComponent<NavMeshAgent>();
 
         timer = knockbackTime;
 
@@ -75,7 +75,7 @@ public class BossMovementState : MonoBehaviour
     private void Update()
     {
 
-        if(JumpCD > 0){
+        if(JumpCD >= 0){
             JumpCD -= Time.deltaTime;
             readyToJump = false;
         }
@@ -91,37 +91,40 @@ public class BossMovementState : MonoBehaviour
         grounded = Physics.Raycast(transform.position, Vector3.down, bossHeight * 0.5f + 0.3f, GroundDetection);
 
         MyInput();
-        SpeedControl();
+        // SpeedControl();
 
         // handle drag
-        if (grounded)
+        if (grounded){
             rb.drag = groundDrag;
-        else
-            rb.drag = 0;
-
-
-        if (hit) {
-            gameObject.GetComponent<Rigidbody>().isKinematic = false;
-            gameObject.GetComponent<NavMeshAgent>().isStopped = true;
-            gameObject.GetComponent<Rigidbody>().AddForceAtPosition(Camera.main.transform.forward * kick, contact.point, ForceMode.Impulse);
-            hit = false;
-            timer = 0;
         }
         else
         {
-            timer += Time.deltaTime;
-            if (knockbackTime < timer)
-            {
-                gameObject.GetComponent<Rigidbody>().isKinematic = true;
-                gameObject.GetComponent<NavMeshAgent>().isStopped = false;
-                agent.SetDestination(player.position);
-            }
+            rb.drag = 0;
+
         }
+
+        // if (hit) {
+        //     gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        //     gameObject.GetComponent<NavMeshAgent>().isStopped = true;
+        //     gameObject.GetComponent<Rigidbody>().AddForceAtPosition(Camera.main.transform.forward * kick, contact.point, ForceMode.Impulse);
+        //     hit = false;
+        //     timer = 0;
+        // }
+        // else
+        // {
+        //     timer += Time.deltaTime;
+        //     if (knockbackTime < timer)
+        //     {
+        //         gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        //         gameObject.GetComponent<NavMeshAgent>().isStopped = false;
+        //         agent.SetDestination(player.position);
+        //     }
+        // }
     }
 
     private void FixedUpdate()
     {
-        MovePlayer();
+        // MovePlayer();
     }
 
     private void MyInput()
@@ -129,40 +132,50 @@ public class BossMovementState : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
+    
         // when to jump
+        // if(readyToJump && grounded)
         if(readyToJump && grounded)
         {
+            Debug.Log("JumpTest");
             readyToJump = false;
 
             StartCoroutine(JumpAttack());
+            Invoke(nameof(ResetJump), JumpCD);
+        }else if(readyToJump && !grounded){
 
-            Invoke(nameof(ResetJump), jumpCooldown);
+            Debug.Log("Jumped");
+
+        }else{
+
+            Debug.Log("Grounded");
+
         }
+
+
     }
 
-    private void MovePlayer()
-    {
-        agent.SetDestination(player.position);
-    }
+    // private void MovePlayer()
+    // {
+    //     agent.SetDestination(player.position);
+    // }
 
-    private void SpeedControl()
-    {
-        Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+    // private void SpeedControl()
+    // {
+    //     Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
-        // limit velocity if needed
-        if(flatVel.magnitude > moveSpeed)
-        {
-            Vector3 limitedVel = flatVel.normalized * moveSpeed;
-            rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
-        }
-    }
+    //     // limit velocity if needed
+    //     if(flatVel.magnitude > moveSpeed)
+    //     {
+    //         Vector3 limitedVel = flatVel.normalized * moveSpeed;
+    //         rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+    //     }
+    // }
 
     private IEnumerator JumpAttack(){
 
         yield return new WaitForSeconds(0.25f);
         Jump();
-        
-
     }
 
     private void Jump()
@@ -175,7 +188,7 @@ public class BossMovementState : MonoBehaviour
 
         if(grounded) {
 
-            Debug.Log("GroundPound");
+            Debug.Log("Landed");
 
         }
         
@@ -186,7 +199,7 @@ public class BossMovementState : MonoBehaviour
         if (other.transform.CompareTag("bullet"))
         {
             contact = other.contacts[0];
-            hit = true;
+            // hit = true;
         }
 
     }

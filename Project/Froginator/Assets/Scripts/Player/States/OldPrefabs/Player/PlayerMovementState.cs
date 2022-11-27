@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class PlayerMovementState : MonoBehaviour
@@ -24,6 +25,8 @@ public class PlayerMovementState : MonoBehaviour
 
     public float groundDrag;
 
+    public float health;
+    
     [Header("Jumping")]
     public float jumpForce;
     public float jumpCooldown;
@@ -295,6 +298,27 @@ public class PlayerMovementState : MonoBehaviour
         }
 
         moveSpeed = desiredMoveSpeed;
+    }
+
+    public void ApplyDamage(float damage)
+    {
+        health -= damage;
+
+        if (health == 0) Invoke(nameof(DestroyPlayer), 0.5f);
+    }
+
+    public void ApplyLaserDamage(float laserdamage)
+    {
+        health -= laserdamage;
+
+        if (health == 0) Invoke(nameof(DestroyPlayer), 0.5f);
+    }
+
+    private void DestroyPlayer()
+    {
+        Destroy(gameObject);
+        SceneManager.LoadScene(2);
+
     }
 
     private void MovePlayer()

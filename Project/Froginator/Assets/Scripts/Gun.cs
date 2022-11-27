@@ -103,10 +103,10 @@ public class Gun : MonoBehaviour
 
             Debug.Log(hit.transform.name);
 
-            BossTarget target = hit.transform.GetComponent<BossTarget>();
+            BossMovementState target = hit.transform.GetComponent<BossMovementState>();
             if(target != null){
 
-                target.takeDamage(damage);
+                target.TakeDamage(damage);
 
             }
 

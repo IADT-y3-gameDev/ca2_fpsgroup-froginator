@@ -51,6 +51,8 @@ public class EnemyMovementState : MonoBehaviour
             contact = other.contacts[0];
             hit = true;
         }
+
+        
     }
     
     

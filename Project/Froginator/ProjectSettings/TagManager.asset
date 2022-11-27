@@ -8,6 +8,9 @@ TagManager:
   - Environment
   - ThirdPersonCamera
   - Weapon
+  - Boss
+  - Grenade
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -23,9 +26,9 @@ TagManager:
   - Ledge
   - Wall
   - Knife
-  - 
-  - 
-  - 
+  - Boss
+  - Pawn
+  - Grenade
   - 
   - 
   - 

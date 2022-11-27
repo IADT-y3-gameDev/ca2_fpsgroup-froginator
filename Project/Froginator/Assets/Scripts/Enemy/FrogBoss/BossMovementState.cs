@@ -1,211 +1,137 @@
-
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class BossMovementState : MonoBehaviour
-{
-    [Header("Movement")]
-    private Transform player;
-    private NavMeshAgent agent;
+{   
+    [Header("References")]
+    public UnityEngine.AI.NavMeshAgent agent;
+    public Transform player;
+    public LayerMask whatIsGround, whatIsPlayer;
+    public float health;
 
-    public float moveSpeed;
+    [Header("Patrol State")]
+    public Vector3 walkPoint;
+    public float walkPointRange;
 
-    public float groundDrag;
+    [Header("Attack State")]
+    public float EmotionalDamage;
+    public float PhysicalDamage;
+    public float LaserDamage;
+    public float LaserCoolDownTimer;
+    bool alreadyAttacked;
 
-    public float jumpForce;
-    public float JumpCD;
-    public float maxJumpCD = 10;
-    public float airMultiplier;
-    public bool readyToJump;
+    [Header("Bullets")]
+    public Transform laserPoint;
+    public TrailRenderer laserTrail;
 
+    [Header("States")]
+    public float sightRange, attackRange;
+    public bool playerInSightRange, playerInAttackRange;
 
+    [Header("Camera")]
+    public Camera FPSCamera;
 
-    [HideInInspector] public float walkSpeed;
-    [HideInInspector] public float sprintSpeed;
-
-
-
-    [Header("Damage")]
-    public float knockbackTime = 1;
-    public float kick = 1.8f;
-     private bool hit;
-    private ContactPoint contact;
-    private float timer;
-
-
-
-    [Header("Ground Check")]
-    public float bossHeight;
-    public LayerMask GroundDetection;
-    public bool grounded;
-
-    public Transform orientation;
-
-    float horizontalInput;
-    float verticalInput;
-
-    Vector3 moveDirection;
-
-    Rigidbody rb;
-
-    private void Awake(){
-
-        // player = GameObject.FindGameObjectWithTag("Player").transform;
-        // Debug.Log("moving towards" ,player);
-        // agent = GetComponent<NavMeshAgent>();
-
-        timer = knockbackTime;
-
-    }
-
-    private void Start()
+    private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
-
-        
-
-        if(JumpCD == 0){
-        readyToJump = true;
-        }
+        player = GameObject.Find("Player").transform;
+        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
 
     private void Update()
     {
+        agent.SetDestination(player.position);
 
-        if(JumpCD >= 0){
-            JumpCD -= Time.deltaTime;
-            readyToJump = false;
-        }
-        else{
+        //Check for sight and attack range
+        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-            readyToJump = true;
+       
+        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
+        if (playerInAttackRange && playerInSightRange) AttackPlayer();
+    }
 
-        }
+   
+    private void SearchWalkPoint()
+    {
+        //Calculate random point in range
+        float randomZ = Random.Range(-walkPointRange, walkPointRange);
+        float randomX = Random.Range(-walkPointRange, walkPointRange);
+
+        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
+
+    }
+
+    private void ChasePlayer()
+    {
+        agent.SetDestination(player.position);
+    }
+
+    private void AttackPlayer()
+    {
+        //Make sure enemy doesn't move
+        
 
         transform.LookAt(player);
 
-        // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, bossHeight * 0.5f + 0.3f, GroundDetection);
-
-        MyInput();
-        // SpeedControl();
-
-        // handle drag
-        if (grounded){
-            rb.drag = groundDrag;
-        }
-        else
+        if (!alreadyAttacked)
         {
-            rb.drag = 0;
+            agent.SetDestination(transform.position);
+            ///Attack code here
+            ShootLaser();
+            ///End of attack code
+
+            alreadyAttacked = true;
+            Invoke(nameof(ResetAttack), LaserCoolDownTimer);
+        }
+    }
+
+    private void ShootLaser(){
+
+        var laser = Instantiate(laserTrail, laserPoint.position, Quaternion.identity);
+        laser.AddPosition(laserPoint.position);
+        {
+            laser.transform.position = transform.position + (FPSCamera.transform.forward * 200);
+        }
+
+
+        RaycastHit hit;
+        if(Physics.Raycast(FPSCamera.transform.position, FPSCamera.transform.forward, out hit, attackRange)){
+
+            Debug.Log(hit.transform.name);
+
+            PlayerMovementState target = hit.transform.GetComponent<PlayerMovementState>();
+            if(target != null){
+
+                target.ApplyLaserDamage(LaserDamage);
+
+            }
 
         }
 
-        // if (hit) {
-        //     gameObject.GetComponent<Rigidbody>().isKinematic = false;
-        //     gameObject.GetComponent<NavMeshAgent>().isStopped = true;
-        //     gameObject.GetComponent<Rigidbody>().AddForceAtPosition(Camera.main.transform.forward * kick, contact.point, ForceMode.Impulse);
-        //     hit = false;
-        //     timer = 0;
-        // }
-        // else
-        // {
-        //     timer += Time.deltaTime;
-        //     if (knockbackTime < timer)
-        //     {
-        //         gameObject.GetComponent<Rigidbody>().isKinematic = true;
-        //         gameObject.GetComponent<NavMeshAgent>().isStopped = false;
-        //         agent.SetDestination(player.position);
-        //     }
-        // }
     }
 
-    private void FixedUpdate()
+    private void ResetAttack()
     {
-        // MovePlayer();
+        alreadyAttacked = false;
     }
 
-    private void MyInput()
+    public void TakeDamage(float damage)
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
+        health -= damage;
+
+        if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
+    }
+    private void DestroyEnemy()
+    {
+        Destroy(gameObject);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, sightRange);
+    }
 
     
-        // when to jump
-        // if(readyToJump && grounded)
-        if(readyToJump && grounded)
-        {
-            Debug.Log("JumpTest");
-            readyToJump = false;
-
-            StartCoroutine(JumpAttack());
-            Invoke(nameof(ResetJump), JumpCD);
-        }else if(readyToJump && !grounded){
-
-            Debug.Log("Jumped");
-
-        }else{
-
-            Debug.Log("Grounded");
-
-        }
-
-
-    }
-
-    // private void MovePlayer()
-    // {
-    //     agent.SetDestination(player.position);
-    // }
-
-    // private void SpeedControl()
-    // {
-    //     Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-
-    //     // limit velocity if needed
-    //     if(flatVel.magnitude > moveSpeed)
-    //     {
-    //         Vector3 limitedVel = flatVel.normalized * moveSpeed;
-    //         rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
-    //     }
-    // }
-
-    private IEnumerator JumpAttack(){
-
-        yield return new WaitForSeconds(0.25f);
-        Jump();
-    }
-
-    private void Jump()
-    {
-        // reset y velocity
-        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-
-        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
-        JumpCD = maxJumpCD;
-
-        if(grounded) {
-
-            Debug.Log("Landed");
-
-        }
-        
-    }
-
-    private void OnCollisionEnter(Collision other){
-
-        if (other.transform.CompareTag("bullet"))
-        {
-            contact = other.contacts[0];
-            // hit = true;
-        }
-
-    }
-
-    private void ResetJump()
-    {
-        readyToJump = true;
-    }
 }

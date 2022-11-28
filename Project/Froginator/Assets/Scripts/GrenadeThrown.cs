@@ -55,6 +55,7 @@ public class GrenadeThrown : MonoBehaviour
 
             //Just an example!
             ///enemies[i].GetComponent<ShootingAi>().TakeDamage(explosionDamage);
+            enemies[i].GetComponent<BossMovementState>().TakeDamage(explosionDamage);
 
             //Add explosion force (if enemy has a rigidbody)
             if (enemies[i].GetComponent<Rigidbody>())

@@ -13,11 +13,11 @@ public class TriggerShootBox : MonoBehaviour
         if(other.CompareTag("Player")){
 
             if(showTrigger){
-                myShootBox.Play("shootBox",0,0.0f);
+                myShootBox.Play("ShowBox",0,0.0f);
                 gameObject.SetActive(false);
             }
             else if(hideTrigger){
-                myShootBox.Play("shootBoxOut",0,0.0f);
+                myShootBox.Play("HideBox",0,0.0f);
                 gameObject.SetActive(false);
             }
         }

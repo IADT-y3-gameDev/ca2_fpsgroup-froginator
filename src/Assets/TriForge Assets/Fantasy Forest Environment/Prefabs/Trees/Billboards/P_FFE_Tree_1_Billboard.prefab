@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 3579517405826926779}
   - component: {fileID: 433149894961350430}
   - component: {fileID: 2442689056371094484}
+  - component: {fileID: 2909918864241336987}
   m_Layer: 0
-  m_Name: Tree_1_Billboard
+  m_Name: P_FFE_Tree_1_Billboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,6 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,3 +81,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2909918864241336987
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4244309157656924673}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14.329785, y: 16.515013, z: 16.587662}
+  m_Center: {x: -0.5858836, y: 7.3956738, z: 0.4958489}

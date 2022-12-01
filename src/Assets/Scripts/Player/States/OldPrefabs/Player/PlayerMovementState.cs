@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public class PlayerMovementState : MonoBehaviour
 {
     [Header("Movement")]
+    public Text healthText;
+
     private float moveSpeed;
     private float desiredMoveSpeed;
     private float lastDesiredMoveSpeed;
@@ -118,6 +121,12 @@ public class PlayerMovementState : MonoBehaviour
             rb.drag = groundDrag;
         else
             rb.drag = 0;
+
+        if (healthText != null)
+        {
+            //Sets the text on our panel.
+            healthText.text = health.ToString();
+        }
     }
 
     private void FixedUpdate()
@@ -306,6 +315,13 @@ public class PlayerMovementState : MonoBehaviour
 
         if (health == 0) Invoke(nameof(DestroyPlayer), 0.5f);
     }
+    public void ApplyHealth(float healing)
+    {
+        health += healing;
+
+        if (health > 100) health = 100;
+    }
+    
 
     public void ApplyLaserDamage(float laserdamage)
     {

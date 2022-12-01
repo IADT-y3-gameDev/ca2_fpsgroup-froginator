@@ -1,10 +1,16 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
+
 
 public class Gun : MonoBehaviour
 {
     [Header("References")]
+    public Text AmmoTXT;
+    public Text MaxAmmoTXT;
+
+
     public float damage;
     public float range;
     public float fireRate;
@@ -48,6 +54,18 @@ public class Gun : MonoBehaviour
     void Update()
     {
 
+        if (AmmoTXT != null)
+        {
+            //Sets the text on our panel.
+            AmmoTXT.text = ammo.ToString();
+        }
+
+        if (MaxAmmoTXT != null)
+        {
+            //Sets the text on our panel.
+            MaxAmmoTXT.text = maxAmmo.ToString();
+        }
+
         if(Input.GetButtonDown("Fire1") && Time.time >= nextTimeToFire && ammo != 0 && isReloaded ){
 
             nextTimeToFire = Time.time + 1f / fireRate;
@@ -78,13 +96,16 @@ public class Gun : MonoBehaviour
                 float tempAmmo;
                 tempAmmo = maxAmmoPer - ammo;
                 maxAmmo -= tempAmmo;
+                ammo += tempAmmo;
             }
 
-            else
-            {
-                maxAmmo -= maxAmmoPer;
-                ammo = maxAmmoPer;
-            }
+            else if(ammo < 1)
+                {
+                    maxAmmo -= maxAmmoPer;
+                    ammo = maxAmmoPer;
+                }
+            
+
             
 
         }
@@ -110,12 +131,21 @@ public class Gun : MonoBehaviour
 
             //Debug.Log(hit.transform.name);
 
-            BossMovementState target = hit.transform.GetComponent<BossMovementState>();
-            if(target != null){
+            BossMovementState boss = hit.transform.GetComponent<BossMovementState>();
+            if(boss != null){
 
-                target.TakeDamage(damage);
+                boss.TakeDamage(damage);
 
             }
+
+
+            GruntMovementState grunt = hit.transform.GetComponent<GruntMovementState>();
+            if(grunt != null){
+
+                grunt.TakeDamage(damage);
+
+            }
+
             
         }
 
@@ -136,6 +166,12 @@ public class Gun : MonoBehaviour
 
         
         
+    }
+
+    public void ApplyAmmo(float battery)
+    {
+        float addAmmo = maxAmmoPer * battery;
+        maxAmmo += addAmmo;
     }
 
 

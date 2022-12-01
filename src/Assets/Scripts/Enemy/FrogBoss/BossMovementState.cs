@@ -1,8 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossMovementState : MonoBehaviour
 {   
     [Header("References")]
+    public Text healthText;
+
     public UnityEngine.AI.NavMeshAgent agent;
     public Transform player;
     public LayerMask whatIsGround, whatIsPlayer;
@@ -52,6 +55,12 @@ public class BossMovementState : MonoBehaviour
        
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
+
+        if (healthText != null)
+        {
+            //Sets the text on our panel.
+            healthText.text = health.ToString();
+        }
     }
 
    
@@ -101,6 +110,7 @@ public class BossMovementState : MonoBehaviour
 
 
         RaycastHit hit;
+
         if(Physics.Raycast(FPSCamera.transform.position, FPSCamera.transform.forward, out hit, attackRange)){
 
             Debug.Log(hit.transform.name);
@@ -125,7 +135,7 @@ public class BossMovementState : MonoBehaviour
     {
         health -= damage;
 
-        if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
+        if (health < 1) Invoke(nameof(DestroyEnemy), 0.5f);
     }
     private void DestroyEnemy()
     {

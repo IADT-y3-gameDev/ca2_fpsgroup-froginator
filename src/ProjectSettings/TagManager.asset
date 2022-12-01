@@ -12,11 +12,12 @@ TagManager:
   - Grenade
   - Enemy
   - Bullet
+  - Spawner
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - SkyEffect
   - Water
   - UI
   - Environment

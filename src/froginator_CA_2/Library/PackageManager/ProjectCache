@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638053130439860575
-    m_Hash: 2009590066
+      ticks: 638055235041117379
+    m_Hash: 3709708725
   m_LockFileStatus:
     m_FilePath: C:/Users/kenji/OneDrive/Documents/GitHub/ca2_fpsgroup-froginator/src/froginator_CA_2/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638053130439870569
-    m_Hash: 4067300045
+      ticks: 638055235041117379
+    m_Hash: 3532288793
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:

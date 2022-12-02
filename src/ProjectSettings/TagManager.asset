@@ -3,25 +3,32 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - bullet
+  - Environment
+  - ThirdPersonCamera
+  - Weapon
+  - Boss
+  - Grenade
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - SkyColorEffect
+  - 
   - Water
   - UI
-  - SkySpaceEffect
+  - Environment
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Projectile
+  - WeaponFX
+  - Ledge
+  - Wall
+  - Knife
+  - Boss
+  - Pawn
+  - Grenade
   - 
   - 
   - 

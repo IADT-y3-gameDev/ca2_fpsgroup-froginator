@@ -1,4 +1,11 @@
 {
+  "com.unity.cinemachine": {
+    "version": "2.6.17",
+    "depth": 0,
+    "source": "registry",
+    "dependencies": {},
+    "url": "https://packages.unity.com"
+  },  
   "dependencies": {
     "com.unity.collab-proxy": {
       "version": "1.17.2",

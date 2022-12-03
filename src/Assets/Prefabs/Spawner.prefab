@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ffb2df187cad145bfd9f4e23691f57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawn: {fileID: 2048853460953535920, guid: b8e07af09e65eea4e8cf5265d00baadc, type: 3}
-  amount: 3
-  delaySpawn: 1
+  spawn: {fileID: 5654904582781811749, guid: 66d5b3ed997ec574f980ebf638f8f628, type: 3}
+  amount: 10
+  delaySpawn: 0.5
   spawnsDead: 0
 --- !u!33 &8022233568510332611
 MeshFilter:

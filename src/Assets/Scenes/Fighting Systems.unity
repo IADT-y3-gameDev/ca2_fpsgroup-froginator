@@ -565,6 +565,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 788039111759446504, guid: 35a7a366ac34fda4db1d92766930b9b3, type: 3}
+      propertyPath: m_Name
+      value: Boss
+      objectReference: {fileID: 0}
     - target: {fileID: 2830380112635301725, guid: 35a7a366ac34fda4db1d92766930b9b3, type: 3}
       propertyPath: m_FontData.m_Alignment
       value: 1

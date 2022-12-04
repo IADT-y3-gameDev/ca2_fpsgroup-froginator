@@ -138,12 +138,14 @@ public class Gun : MonoBehaviour
 
             }
 
+
             GruntMovementState grunt = hit.transform.GetComponent<GruntMovementState>();
             if(grunt != null){
 
                 grunt.TakeDamage(damage);
 
             }
+
             
         }
 

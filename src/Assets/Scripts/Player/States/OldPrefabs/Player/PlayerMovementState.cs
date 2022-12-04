@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class PlayerMovementState : MonoBehaviour
 {
     [Header("Movement")]
-    public Text healthText;
 
     private float moveSpeed;
     private float desiredMoveSpeed;
@@ -28,7 +27,11 @@ public class PlayerMovementState : MonoBehaviour
 
     public float groundDrag;
 
-    public float health;
+    public float maxHealth;
+	public float currentHealth;
+
+	public HealthBar healthBar;
+
     
     [Header("Jumping")]
     public float jumpForce;
@@ -101,8 +104,10 @@ public class PlayerMovementState : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-
         readyToJump = true;
+
+        currentHealth = maxHealth;
+		healthBar.SetMaxHealth(maxHealth);
 
         startYScale = transform.localScale.y;
     }
@@ -122,12 +127,10 @@ public class PlayerMovementState : MonoBehaviour
         else
             rb.drag = 0;
 
-        if (healthText != null)
-        {
-            //Sets the text on our panel.
-            healthText.text = health.ToString();
-        }
+        
     }
+
+    
 
     private void FixedUpdate()
     {
@@ -311,23 +314,26 @@ public class PlayerMovementState : MonoBehaviour
 
     public void ApplyDamage(float damage)
     {
-        health -= damage;
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
 
-        if (health == 0) Invoke(nameof(DestroyPlayer), 0.5f);
+        if (currentHealth == 0) Invoke(nameof(DestroyPlayer), 0.5f);
     }
     public void ApplyHealth(float healing)
     {
-        health += healing;
+        currentHealth += healing;
+        healthBar.SetHealth(currentHealth);
 
-        if (health > 100) health = 100;
+        if (currentHealth > 100) currentHealth = 100;
     }
     
 
     public void ApplyLaserDamage(float laserdamage)
     {
-        health -= laserdamage;
+        currentHealth -= laserdamage;
+        healthBar.SetHealth(currentHealth);
 
-        if (health == 0) Invoke(nameof(DestroyPlayer), 0.5f);
+        if (currentHealth == 0) Invoke(nameof(DestroyPlayer), 0.5f);
     }
 
     private void DestroyPlayer()

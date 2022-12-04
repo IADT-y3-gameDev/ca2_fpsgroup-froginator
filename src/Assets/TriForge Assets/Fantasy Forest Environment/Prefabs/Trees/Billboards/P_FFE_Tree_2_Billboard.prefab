@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5520471591819088061}
   - component: {fileID: 7744028482620089463}
   - component: {fileID: 3454724562189379422}
+  - component: {fileID: 1811600297225624401}
   m_Layer: 0
   m_Name: P_FFE_Tree_2_Billboard
   m_TagString: Untagged
@@ -91,7 +92,21 @@ BoxCollider:
   m_GameObject: {fileID: 8104417264528016802}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 16.247145, y: 18.309431, z: 15.477432}
   m_Center: {x: 0.119571686, y: 8.23161, z: 1.0635996}
+--- !u!136 &1811600297225624401
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8104417264528016802}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.74
+  m_Height: 23.67
+  m_Direction: 1
+  m_Center: {x: 0.119571686, y: 8.23161, z: -0.14}

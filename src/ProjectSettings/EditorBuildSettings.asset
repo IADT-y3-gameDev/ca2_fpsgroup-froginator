@@ -9,9 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Tech Demo Scene.unity
     guid: bebc050756972234eb97d414dab7df66
   - enabled: 1
-    path: Assets/Scenes/MainGame.unity
-    guid: e505cf106d8c29c43858b838fc8a5c9b
+    path: Assets/Scenes/SpaceShipScene.unity
+    guid: 73a0beb65d0737546a1a41a0205ec1f8
   - enabled: 1
-    path: Assets/Scenes/EndGame.unity
-    guid: 27e3c022cdbfc05428972e7a5d73dc8b
+    path: Assets/Scenes/ForestScene.unity
+    guid: 5dfefa9f6478f1d49af034d2ed78dea8
+  - enabled: 1
+    path: Assets/Scenes/SwampScene.unity
+    guid: 41ecafd0afb88484087aeeaf1bf985d2
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: f634395708a941d4e97c152a1b3e5fe9
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: e505cf106d8c29c43858b838fc8a5c9b
   m_configObjects: {}

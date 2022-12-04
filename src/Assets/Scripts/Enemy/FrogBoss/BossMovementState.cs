@@ -4,12 +4,15 @@ using UnityEngine.UI;
 public class BossMovementState : MonoBehaviour
 {   
     [Header("References")]
-    public Text healthText;
 
     public UnityEngine.AI.NavMeshAgent agent;
     public Transform player;
     public LayerMask whatIsGround, whatIsPlayer;
-    public float health;
+
+    public float maxHealth;
+	public float currentHealth;
+
+	public BossHealthBar healthBar;
 
     [Header("Patrol State")]
     public Vector3 walkPoint;
@@ -44,6 +47,13 @@ public class BossMovementState : MonoBehaviour
 
     }
 
+    private void Start(){
+
+        currentHealth = maxHealth;
+		healthBar.SetMaxHealth(maxHealth);
+
+    }
+
     private void Update()
     {
         agent.SetDestination(player.position);
@@ -56,11 +66,7 @@ public class BossMovementState : MonoBehaviour
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
 
-        if (healthText != null)
-        {
-            //Sets the text on our panel.
-            healthText.text = health.ToString();
-        }
+        
     }
 
    
@@ -133,9 +139,10 @@ public class BossMovementState : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        health -= damage;
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
 
-        if (health < 1) Invoke(nameof(DestroyEnemy), 0.5f);
+        if (currentHealth < 1) Invoke(nameof(DestroyEnemy), 0.5f);
     }
     private void DestroyEnemy()
     {

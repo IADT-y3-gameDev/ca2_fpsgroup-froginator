@@ -639,6 +639,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4965796868601814}
     m_Modifications:
+    - target: {fileID: 3454724562189379422, guid: 10cb3205bccaf98418b9b680667af607, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8104417264528016802, guid: 10cb3205bccaf98418b9b680667af607, type: 3}
       propertyPath: m_Name
       value: Tree_2_Billboard

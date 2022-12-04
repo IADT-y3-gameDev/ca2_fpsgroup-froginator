@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.38f1 (8f5fde82e2dc) revision 9396190'; Using compiler version '192528614'; Build Type 'Release'
 OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 15792 MB
@@ -262,6 +263,8 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 =======
+=======
+>>>>>>> 545146dfcdc5966e898b72f36a9de9addf74699a
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.38f1 (8f5fde82e2dc) revision 9396190'; Using compiler version '192528614'; Build Type 'Release'
 OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 15792 MB
@@ -778,4 +781,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+<<<<<<< HEAD
+>>>>>>> 545146dfcdc5966e898b72f36a9de9addf74699a
+=======
 >>>>>>> 545146dfcdc5966e898b72f36a9de9addf74699a

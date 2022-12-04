@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Fighting Systems.unity
-=======
-- path: Assets/Scenes/SpaceShipScene.unity
->>>>>>> 545146dfcdc5966e898b72f36a9de9addf74699a
+- path: Assets/Scenes/SwampScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

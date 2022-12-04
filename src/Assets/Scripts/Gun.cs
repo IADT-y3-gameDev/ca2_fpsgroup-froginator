@@ -129,7 +129,7 @@ public class Gun : MonoBehaviour
         RaycastHit hit;
         if(Physics.Raycast(FPSCamera.transform.position, FPSCamera.transform.forward, out hit, range)){
 
-            Debug.Log(hit.transform.name);
+            //Debug.Log(hit.transform.name);
 
             BossMovementState boss = hit.transform.GetComponent<BossMovementState>();
             if(boss != null){
@@ -144,7 +144,7 @@ public class Gun : MonoBehaviour
                 grunt.TakeDamage(damage);
 
             }
-
+            
         }
 
     }

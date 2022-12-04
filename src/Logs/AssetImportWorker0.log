@@ -15,11 +15,11 @@ C:/Users/kenji/OneDrive/Documents/GitHub/ca2_fpsgroup-froginator/src
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49352
+63815
 Successfully changed project path to: C:/Users/kenji/OneDrive/Documents/GitHub/ca2_fpsgroup-froginator/src
 C:/Users/kenji/OneDrive/Documents/GitHub/ca2_fpsgroup-froginator/src
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 204.36 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 113.12 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.38f1 (8f5fde82e2dc)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Resources/UnitySubsystems
@@ -35,710 +35,147 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.38f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.38f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56576
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56120
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.38f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005052 seconds.
+Registered in 0.006696 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 78.44 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 119.13 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.996 seconds
+- Completed reload, in  1.497 seconds
 Domain Reload Profiling:
-	ReloadAssembly (996ms)
-		BeginReloadAssembly (164ms)
+	ReloadAssembly (1498ms)
+		BeginReloadAssembly (165ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (722ms)
-			LoadAssemblies (159ms)
-			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (223ms)
+		EndReloadAssembly (1162ms)
+			LoadAssemblies (154ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (316ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (278ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (448ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (79ms)
-				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (135ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
+				RefreshPlugins (120ms)
+				BeforeProcessingInitializeOnLoad (42ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (63ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (1ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010622 seconds.
+Registered in 0.012135 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-0000018CFB729820 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFC0270F0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFB6B2630 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFC852210 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFB67B220 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFAF29020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFAF29020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFAF58830 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFB20E460 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFC192010 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFC192010 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFBF9BE50 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFBF9BE50 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFBF9BE50 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFB222020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFA98F1E0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CF7509020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFA98F1E0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFB509070 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFC04C710 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CF7527040 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFC0FC620 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFB25B430 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFB683C30 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFA82EC40 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFC1D0A50 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFBFB7020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFB25B430 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018CFC6BFBE0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProGrids.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.93 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.162 seconds
+- Completed reload, in  7.914 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2165ms)
-		BeginReloadAssembly (350ms)
+	ReloadAssembly (7919ms)
+		BeginReloadAssembly (524ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (11ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (48ms)
-		EndReloadAssembly (1651ms)
-			LoadAssemblies (319ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (6496ms)
+			LoadAssemblies (1528ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (530ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (84ms)
-			SetupLoadedEditorAssemblies (616ms)
+			SetupTypeCache (1568ms)
+			ReleaseScriptCaches (17ms)
+			RebuildScriptCaches (674ms)
+			SetupLoadedEditorAssemblies (1894ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (15ms)
 				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (116ms)
-				ProcessInitializeOnLoadAttributes (423ms)
-				ProcessInitializeOnLoadMethodAttributes (34ms)
-				AfterProcessingInitializeOnLoad (22ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (306ms)
+				ProcessInitializeOnLoadAttributes (1474ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
+				AfterProcessingInitializeOnLoad (35ms)
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 1.20 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 7.94 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2253 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 123.3 MB.
-System memory in use after: 122.7 MB.
+Unloading 2256 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 123.4 MB.
+System memory in use after: 122.8 MB.
 
-Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2716.
-Total: 12.130300 ms (FindLiveObjects: 2.668700 ms CreateObjectMapping: 1.761400 ms MarkObjects: 7.129800 ms  DeleteObjects: 0.566000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Scenes/SpaceShipScene.unity
-  artifactKey: Guid(73a0beb65d0737546a1a41a0205ec1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SpaceShipScene.unity using Guid(73a0beb65d0737546a1a41a0205ec1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9aa56f930a4a247c83af22a022b03e7') in 0.018992 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 859.015379 seconds.
-  path: Assets/Scenes/IntroTimeline.playable
-  artifactKey: Guid(69daf3a9a652f8147971ab546b4c7e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/IntroTimeline.playable using Guid(69daf3a9a652f8147971ab546b4c7e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '593583377e0de61d1d131b73caf15739') in 1.257480 seconds 
-========================================================================
-Received Prepare
-The file 'UserSettings/EditorUserSettings.asset' seems to have merge conflicts. Please open it in a text editor and fix the merge.
-Trying to reload asset but can't find object on disk
-Registering precompiled user dll's ...
-Registered in 0.022493 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001BC0C9BF840 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC106D66E0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC106C4040 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1604D4F0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC106D66E0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC106D66E0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC104A2020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC14DC4050 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC0CC36A50 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC119B0080 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC119B0080 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC10913050 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC104D1830 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1059CA40 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC13FFD010 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC0CFEA020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC119C8C90 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC112CEA50 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC10539080 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1515F140 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC119C8C90 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC11B40640 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC11B40640 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC109E7D70 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1297D7F0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC103A1090 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC143AF410 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC10480340 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1877BB80 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProGrids.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.508 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2515ms)
-		BeginReloadAssembly (836ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (44ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (422ms)
-		EndReloadAssembly (1562ms)
-			LoadAssemblies (394ms)
-			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (526ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (77ms)
-			SetupLoadedEditorAssemblies (517ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (366ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
-				AfterProcessingInitializeOnLoad (13ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.23 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2180 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 116.5 MB.
-System memory in use after: 115.9 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2724.
-Total: 11.621800 ms (FindLiveObjects: 0.280000 ms CreateObjectMapping: 0.191700 ms MarkObjects: 10.254500 ms  DeleteObjects: 0.892900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Trying to reload asset but can't find object on disk
-Registering precompiled user dll's ...
-Registered in 0.008965 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001BC0C9BF840 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC18E51FD0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC106C2030 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC19A09BA0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC106D66E0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC106D66E0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC11C07010 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC14DC4050 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1213B870 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC13D51010 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC10460F30 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC106C2030 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC106C2030 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1059CA40 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC119B0080 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1059CA40 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC157D7010 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC12434020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1955DBE0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC112C3010 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC157D7010 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1439D020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1439D020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC3B54B490 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC14FAEA40 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1044DF20 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC0CB5BF00 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC13B74020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC18779CA0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProGrids.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.627 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1628ms)
-		BeginReloadAssembly (255ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (52ms)
-		EndReloadAssembly (1279ms)
-			LoadAssemblies (279ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (394ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (57ms)
-			SetupLoadedEditorAssemblies (503ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (88ms)
-				ProcessInitializeOnLoadAttributes (372ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
-				AfterProcessingInitializeOnLoad (13ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2179 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 116.5 MB.
-System memory in use after: 115.9 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2727.
-Total: 5.007000 ms (FindLiveObjects: 0.302300 ms CreateObjectMapping: 0.170400 ms MarkObjects: 3.890700 ms  DeleteObjects: 0.641200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 350.221388 seconds.
-  path: Assets/New Terrain.asset
-  artifactKey: Guid(86bf953a2f73d4a4a8ba55310bbeae81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(86bf953a2f73d4a4a8ba55310bbeae81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree MSH_FFE_Mushroom02_Group_Large must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree MSH_FFE_Mushroom02_Group_Small must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree MSH_FFE_Mushroom05_D must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree MSH_FFE_Mushroom_5_Group must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree MSH_FFE_Bush_1 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree P_FFE_Tree_1_Billboard must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-The tree P_FFE_Tree_2_Billboard must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
- -> (artifact id: 'acdf42084985da7ecf8548c033e931fe') in 0.660201 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.567027 seconds.
-  path: Assets/Scenes/Enemy-Prefabs.unity
-  artifactKey: Guid(e727e4c64080ad7419d96c48083e69a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Enemy-Prefabs.unity using Guid(e727e4c64080ad7419d96c48083e69a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24987b6836de00f9875f405f32532687') in 0.007970 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.032698 seconds.
-  path: Assets/Scenes/Fighting Systems.unity
-  artifactKey: Guid(8ba0dcf8055ab1a458ce2a73c15a7a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Fighting Systems.unity using Guid(8ba0dcf8055ab1a458ce2a73c15a7a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f92c7a7dd2957467f450f2a738feca9') in 0.008964 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.526942 seconds.
-  path: Assets/Scenes/ForestScene.unity
-  artifactKey: Guid(5dfefa9f6478f1d49af034d2ed78dea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/ForestScene.unity using Guid(5dfefa9f6478f1d49af034d2ed78dea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e13a91fd8188708cdf26145316b3c2cd') in 0.007645 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.157886 seconds.
-  path: Assets/Scenes/HUDScene.unity
-  artifactKey: Guid(5adb8f7fc29d94f4893a9a89c4ce2b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/HUDScene.unity using Guid(5adb8f7fc29d94f4893a9a89c4ce2b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f54196179c970fae6f7919a8d4deedf8') in 0.022208 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 79.828781 seconds.
-  path: Assets/Scenes/SpaceShipScene.unity
-  artifactKey: Guid(73a0beb65d0737546a1a41a0205ec1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SpaceShipScene.unity using Guid(73a0beb65d0737546a1a41a0205ec1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68d4e22bb98a5cbbcc91cd6bed3b64d4') in 0.029778 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 72.675079 seconds.
-  path: Assets/Prefabs/Weapons/BulletTrail.prefab
-  artifactKey: Guid(63d88c98def616144bc41d0a81a8d79a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/BulletTrail.prefab using Guid(63d88c98def616144bc41d0a81a8d79a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38d7aa37196fa316493f00b244e3fc2b') in 0.332815 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.164057 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle
-  artifactKey: Guid(271cbd3883368894790613b555baf686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle using Guid(271cbd3883368894790613b555baf686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3580f463757fc7adbc6739c22d3458') in 0.036390 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.823843 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle/textures
-  artifactKey: Guid(ab55f6752e82b9748ab8be4b64e6de7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle/textures using Guid(ab55f6752e82b9748ab8be4b64e6de7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eac9ffb90a63ea9e562b12df1c1ea1af') in 0.033034 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.079416 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle/textures/CannonMetal_Base_Color.png
-  artifactKey: Guid(a16076b7b02f0334384a1a0dbc77427f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle/textures/CannonMetal_Base_Color.png using Guid(a16076b7b02f0334384a1a0dbc77427f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65fd36a56698e426582791009e8d4a62') in 0.281348 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000860 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle/textures/CannonMetal_Metallic.png
-  artifactKey: Guid(bee686dc6e8087b4b8ef8aaeb83fbef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle/textures/CannonMetal_Metallic.png using Guid(bee686dc6e8087b4b8ef8aaeb83fbef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c074d57f0d8c0363d09c6188f3f546f8') in 0.038772 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000778 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle/textures/PaintMaterial_Normal_OpenGL.png
-  artifactKey: Guid(fd273c1a52b6d96419264e4353509ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle/textures/PaintMaterial_Normal_OpenGL.png using Guid(fd273c1a52b6d96419264e4353509ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91a72ecea8cdf59ed8e3c276da93294a') in 0.046972 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000950 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle/textures/PaintMaterial_Metallic.png
-  artifactKey: Guid(2ef8e27e6020e7349a12bb29ddd6ca34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle/textures/PaintMaterial_Metallic.png using Guid(2ef8e27e6020e7349a12bb29ddd6ca34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '326fe16fb832ac9db2a539b65d1144f2') in 0.038210 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001091 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle/textures/PaintMaterial_Emissive.png
-  artifactKey: Guid(adec3a4854642c44cb7b4c3072403c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle/textures/PaintMaterial_Emissive.png using Guid(adec3a4854642c44cb7b4c3072403c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c558793c317584db8006843e8fb8268f') in 0.071943 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000927 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle/textures/CannonMetal_Normal_OpenGL.png
-  artifactKey: Guid(fa3a9244014662d4abb71773e8e8c15a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle/textures/CannonMetal_Normal_OpenGL.png using Guid(fa3a9244014662d4abb71773e8e8c15a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83fe673073c8534d98f34743779bc319') in 0.043754 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002152 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle/textures/PaintMaterial_Roughness.png
-  artifactKey: Guid(a304f288af3acb24bb192e627e2ae77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle/textures/PaintMaterial_Roughness.png using Guid(a304f288af3acb24bb192e627e2ae77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aec248777cbee57e0534b4269eb9a11') in 0.043021 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001116 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle/textures/CannonMetal_Emissive.png
-  artifactKey: Guid(6a1fb2ba897848b49b338716d39f1e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle/textures/CannonMetal_Emissive.png using Guid(6a1fb2ba897848b49b338716d39f1e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70fcff6dedf97cf54ecdde2b39a524e8') in 0.034479 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001341 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle/textures/PaintMaterial_Base_Color.png
-  artifactKey: Guid(b097d6d421362c149bce680020b0e552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle/textures/PaintMaterial_Base_Color.png using Guid(b097d6d421362c149bce680020b0e552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb22cc6e3592b2d2143b0d8f4e166e72') in 0.048024 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000760 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle/textures/New Material.mat
-  artifactKey: Guid(a76ef2eb0d03cb24393ace0230e50a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle/textures/New Material.mat using Guid(a76ef2eb0d03cb24393ace0230e50a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ec9bcbcbbcc317296487eaf1b57ab2a') in 0.130493 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001027 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle/textures/PaintMaterial_Emissive - Copy.png
-  artifactKey: Guid(2c86bdbe16008c04aaa54e09a994e047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle/textures/PaintMaterial_Emissive - Copy.png using Guid(2c86bdbe16008c04aaa54e09a994e047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b749e0ad158c0e1378366b6b4f9129') in 0.036320 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000908 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle/textures/CannonMetal_Mixed_AO.png
-  artifactKey: Guid(ab775725e2946ae49ad319454072d1e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle/textures/CannonMetal_Mixed_AO.png using Guid(ab775725e2946ae49ad319454072d1e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e0dad670bd8265293809b246035e12c') in 0.035525 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001435 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle/textures/New Material 1.mat
-  artifactKey: Guid(08e4b0a67cd1dc946a0bee02e233d6c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle/textures/New Material 1.mat using Guid(08e4b0a67cd1dc946a0bee02e233d6c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af12ab42cb1acbb15660115b5707c4fb') in 0.081882 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000886 seconds.
-  path: Assets/Prefabs/Weapons/SniperRifle/textures/PaintMaterial_Mixed_AO.png
-  artifactKey: Guid(73914bff22521cb44be34894eb38616c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Weapons/SniperRifle/textures/PaintMaterial_Mixed_AO.png using Guid(73914bff22521cb44be34894eb38616c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034755ab7e1899ad5704eddbd292a03f') in 0.037609 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.017710 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001BC119E7490 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC106D66E0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC13F93020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC19A0AA10 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC3B4F2020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC3D9DA4A0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC16C10BD0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1439D020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC0C481A00 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC0CDE2010 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1618BE60 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC13F93020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1578E040 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC19D1A1E0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC16810030 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1A080830 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC18303130 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC11CBF020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1685F0B0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC19D1A1E0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1804D2B0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC14796030 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC12343010 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1A13CC60 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC10F8E050 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC3B1F4170 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC145BAF90 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC12343010 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC3A6416C0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProGrids.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.491 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2494ms)
-		BeginReloadAssembly (443ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (109ms)
-		EndReloadAssembly (1875ms)
-			LoadAssemblies (467ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (598ms)
-			ReleaseScriptCaches (7ms)
-			RebuildScriptCaches (84ms)
-			SetupLoadedEditorAssemblies (670ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (6ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (136ms)
-				ProcessInitializeOnLoadAttributes (468ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
-				AfterProcessingInitializeOnLoad (16ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2179 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 119.8 MB.
-System memory in use after: 119.3 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2773.
-Total: 5.247300 ms (FindLiveObjects: 0.333500 ms CreateObjectMapping: 0.215700 ms MarkObjects: 4.039000 ms  DeleteObjects: 0.657100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 287.571328 seconds.
-  path: Assets/Scenes/SwampScene.unity
-  artifactKey: Guid(41ecafd0afb88484087aeeaf1bf985d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SwampScene.unity using Guid(41ecafd0afb88484087aeeaf1bf985d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a9a889fec23546c73ad5b57b35921d6') in 0.027838 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007711 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001BC0C9BF840 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC18E01020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC12622010 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC18822D20 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC19FC3790 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1699D020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC16C10BD0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC15E31510 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC193DDD10 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC16810030 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC182D4F10 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1602D020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC193B1B50 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC154C4020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC119B0080 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC154C4020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1612B010 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC193D7CF0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC168668F0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC154C4020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1527E010 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1A0B4020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC12343010 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC0C9BF840 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC16B97020 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC193D7CF0 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC145BAF90 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC12343010 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BC1877C500 doesn't match image C:\Users\kenji\OneDrive\Documents\GitHub\ca2_fpsgroup-froginator\src\Library\ScriptAssemblies\Unity.ProGrids.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.83 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.308 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3311ms)
-		BeginReloadAssembly (278ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (15ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (68ms)
-		EndReloadAssembly (2870ms)
-			LoadAssemblies (319ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1050ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (142ms)
-			SetupLoadedEditorAssemblies (1077ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (28ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (4ms)
-				BeforeProcessingInitializeOnLoad (222ms)
-				ProcessInitializeOnLoadAttributes (745ms)
-				ProcessInitializeOnLoadMethodAttributes (47ms)
-				AfterProcessingInitializeOnLoad (30ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2179 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 119.8 MB.
-System memory in use after: 119.3 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2776.
-Total: 5.540000 ms (FindLiveObjects: 0.516800 ms CreateObjectMapping: 0.351000 ms MarkObjects: 4.077600 ms  DeleteObjects: 0.592900 ms)
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2719.
+Total: 11.164100 ms (FindLiveObjects: 0.750500 ms CreateObjectMapping: 0.418000 ms MarkObjects: 8.724500 ms  DeleteObjects: 1.267900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 

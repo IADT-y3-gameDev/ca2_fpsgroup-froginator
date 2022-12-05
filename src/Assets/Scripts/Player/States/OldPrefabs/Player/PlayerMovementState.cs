@@ -339,7 +339,7 @@ public class PlayerMovementState : MonoBehaviour
     private void DestroyPlayer()
     {
         Destroy(gameObject);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Lose");
 
     }
 
